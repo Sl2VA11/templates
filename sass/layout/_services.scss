@@ -1,0 +1,128 @@
+.services {
+   padding-top: 105px;
+   padding-bottom: 105px;
+   
+
+		&__titel-wrap {
+         text-align: center;
+		}
+
+		&__title {
+         
+         text-align: center;
+
+         margin-bottom: 50px;
+         color: #323232;
+		}
+
+		&__after-title {
+         margin-left: auto;
+         margin-right: auto;
+         
+         margin-bottom: 70px;
+         max-width: 730px;
+         @media screen and (min-width: 768px){
+            font-size: 16px;
+         }
+         
+		}
+     
+
+
+}
+.servises-list{
+  
+   margin-bottom: 35px;
+   justify-content: center;
+   @media screen and (min-width: 768px){
+      
+      margin-bottom: 55px;
+   }
+   
+}
+.servises-list__item{
+   display: flex;
+   flex-basis: calc(100% / 1 - 20px);
+   margin-top: 20px;
+   margin-left: 20px;
+   @media screen and (min-width: 768px){
+      
+      flex-basis: calc(100% / 3 - 30px);
+   }
+   @media screen and (min-width: 1100px){
+      margin-top: 30px;
+      margin-left: 30px;
+   }
+}
+.servises-list__text-wrap{
+   display: flex;
+   @media screen and (min-width: 768px) and (max-width: 1100px){
+      display: block;
+   }
+}
+.servises-list__text{
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+}
+.servises-list__img-wrap{
+   display: inline-block;
+   border: 1px solid #E0E0E0;
+   padding: 5px;
+   border-radius: 50%;
+   margin-right: 20px;
+   &:hover,
+   &:focus{
+      border: 1px solid #4985FF;
+   }
+   @media screen and (min-width: 768px) and (max-width: 1100px){
+      margin-right: 0;
+      margin-bottom: 10px;
+   }
+   @media screen and (min-width: 1100px){
+      padding: 10px;
+   }
+}
+.servises-list__img-border{
+   display: inline-block;
+   padding: 15px;
+   border-radius: 50%;
+   border: 1px solid #4985FF;
+   @media screen and (min-width: 1100px){
+      padding: 25px;
+   }
+}
+.servises-list__img{ 
+   width: 40px;
+   height: 40px;
+   
+   
+}
+.servises-list__title{
+   font-weight: 600;
+   font-size: 15px;
+   line-height: 1.22;
+   color: #000000;
+   margin-bottom: 12px;
+   @media screen and (min-width: 768px){
+      font-size: 18px; 
+   }
+
+}
+.servises-list__after-title{
+   font-size: 12px;
+   line-height: 1.17;
+   @media screen and (min-width: 768px){
+      font-size: 13px;
+      line-height: 1.57;
+   }
+   @media screen and (min-width: 1100px){
+      font-size: 14px;
+   }
+}
+.servises-list__btn{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+

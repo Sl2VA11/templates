@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Templates</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com"> 
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="./css/main.min.css" />
+</head>
+<body>
+   <header class="header">
+      <div class="conteiner">
+         <nav>
+            <ul class="header__list">
+               <li class="header__item"><a href="" class="header__link link">Главная</a></li>
+               <li class="header__item"><a href="" class="header__link link">Наши проекты</a></li>
+               <li class="header__item"><a href="" class="header__link link">Услуги</a></li>
+               <li class="header__item"><a href="" class="header__link link">Новости</a></li>
+               <li class="header__item"><a href="" class="header__link link">Контакты</a></li>
+            </ul>
+         </nav>
+         <button type="button" class="menu-open-btn" data-menu-open>
+            <svg class="menu-open-btn__icon" width="40" height="40">
+              <use href="./img/icons.svg#icon-menuburger"></use>
+            </svg>
+          </button>
+      </div>
+      <div class="connect is-hidden" data-menu>
+         <div class="conteiner-menu">
+           <button type="button" class="menu-close-btn" data-menu-close>
+             <svg class=" menu-close-btn__icon" width="40" height="40">
+               <use href="./img/icons.svg#icon-closex"></use>
+             </svg>
+           </button>
+           <div class="mob-menu-top">
+             <ul class="mob-menu-top__list list">
+               <li class="mob-menu-top__item">
+                 <a class="link mob-menu-top__link--current" href="./index.html"
+                   >Главная</a
+                 >
+               </li>
+               <li class="mob-menu-top__item">
+                 <a class="link mob-menu-top__link" href="">Наши проекты</a>
+               </li>
+               <li class="mob-menu-top__item">
+                 <a class="link mob-menu-top__link" href="">Услуги</a>
+               </li>
+             </ul>
+           </div>
+           <div class="mob-menu-contact">
+             <ul class="mob-menu-center__list contact list">
+               <li class="mob-menu-center__item">
+                 <a class="link mob-menu-center__link header-common" href="">
+                  Новости     
+                 </a>
+               </li>
+               <li class="mob-menu-center__item">
+                 <a class="link mob-menu-center__link-mail" href="">
+                     Контакты
+                   
+                 </a>
+               </li>
+             </ul>           
+             <ul class="list mob-menu-bottom__list">
+               <li class="mob-menu-bottom__item">
+                 <a href="https://instagram.com" class="link mob-menu-bottom__link">
+                   Instagram
+                 </a>
+               </li>
+               <li class="mob-menu-bottom__item">
+                 <a href="https://twitter.com/?lang=uk" class="link mob-menu-bottom__link">
+                   Twitter
+                 </a>
+               </li>
+               <li class="mob-menu-bottom__item">
+                 <a href="https://www.facebook.com/" class="link mob-menu-bottom__link">
+                   Facebook
+                 </a>
+               </li>
+               <li class="mob-menu-bottom__item">
+                 <a href="https://www.linkedin.com/" class="link mob-menu-bottom__link">
+                   LinkedIn
+                 </a>
+               </li>
+             </ul>          
+           </div>  
+         </div> 
+   </header>
+   <main class="main">
+      <div class="hero">
+         <div class="conteiner">        
+            <div class="hero__list">
+               <p class="hero__pre-title">Передовая IT студия</p>
+               <h1 class="hero__title">Мы создаем легкие решения <br> сложных задач и проблем</h1>                   
+               <button class="btn">Наши проекты</button>           
+            </div>
+         </div>
+      </div>
+      <section class="services">
+         <div class="conteiner">
+            <div class="services__titel-wrap">
+               <h2 class="services__title section-title">Мы создаем мобильные приложения
+                 <br> для крупных корпораций
+               </h2>
+               <p class="services__after-title section-text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. </p>
+            </div>
+            <ul class="servises-list card-set">
+               <li class="servises-list__item">
+                  <div class="servises-list__text-wrap">
+                     <div class="servises-list__img-wrap">
+                        <div class="servises-list__img-border">
+                           <img src="./img/project.svg" alt="" class="servises-list__img">
+                        </div>
+                     </div>
+                     <div class="servises-list__text">
+                        <h3 class="servises-list__title">Создание сайтов</h3>
+                        <p class="servises-list__after-title">Lorem Ipsum - это текст- "рыба", часто используе в печати и вэб-дизайне.</p>
+                     </div>
+                     
+                  </div>
+               </li>
+               <li class="servises-list__item">
+                  <div class="servises-list__text-wrap">
+                     <div class="servises-list__img-wrap">
+                        <div class="servises-list__img-border">
+                           <img src="./img/project.svg" alt="" class="servises-list__img">
+                        </div>
+                     </div>
+                     <div class="servises-list__text">
+                        <h3 class="servises-list__title">Создание сайтов</h3>
+                        <p class="servises-list__after-title">Lorem Ipsum - это текст- "рыба", часто используе в печати и вэб-дизайне.</p>
+                     </div>
+                     
+                  </div>
+               </li>
+               <li class="servises-list__item">
+                  <div class="servises-list__text-wrap">
+                     <div class="servises-list__img-wrap">
+                        <div class="servises-list__img-border">
+                           <img src="./img/project.svg" alt="" class="servises-list__img">
+                        </div>
+                     </div>
+                     <div class="servises-list__text">
+                        <h3 class="servises-list__title">Создание сайтов</h3>
+                        <p class="servises-list__after-title">Lorem Ipsum - это текст- "рыба", часто используе в печати и вэб-дизайне.</p>
+                     </div>
+                     
+                  </div>
+               </li>  
+                        
+            </ul>
+            <div class="servises-list__btn">
+                <button class="btn">Все услуги</button>
+            </div> 
+         </div>
+      </section>
+      <section class="project">
+         <div class="conteiner">
+            <ul class="project__list">
+               <li class="project__item">
+                  <h2 class="section-title project__title">Высокие стандарты <br>
+                     разработки
+                  </h2>
+                  <p class="text project__after-title section-tex">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.  стандартной "рыбой" для текстов на латинице с начала XVI века. </p>
+                  <a href="" class="project__link">Подробнее о компании</a>
+               </li>
+               <li class="project__item">
+                  <img src="./img/project.png" alt="" class="project__img">
+               </li>
+            </ul>
+            <ul class="our-project-list ">
+               <li class="our-project-list__item">
+                  <div class="our-project-list__wrap">
+                     <svg class="our-project-list__icon" width="40" height="40">
+                        <use href="./img/icons.svg#icon-web-programming"></use>
+                     </svg>
+                     <p class="our-project-list__number">125</p>
+                  </div>
+               
+                  <p class="our-project-list__text">Our projects</p>
+               </li>
+               <li class="our-project-list__item">
+                  <div class="our-project-list__wrap">
+                     <svg class="our-project-list__icon" width="40" height="40">
+                        <use href="./img/icons.svg#icon-web-programming"></use>
+                     </svg>
+                     <p class="our-project-list__number">125</p>
+                  </div>
+               
+                  <p class="our-project-list__text">Our projects</p>
+               </li>
+               <li class="our-project-list__item">
+                  <div class="our-project-list__wrap">
+                     <svg class="our-project-list__icon" width="40" height="40">
+                        <use href="./img/icons.svg#icon-web-programming"></use>
+                     </svg>
+                     <p class="our-project-list__number">125</p>
+                  </div>
+               
+                  <p class="our-project-list__text">Our projects</p>
+               </li>
+               <li class="our-project-list__item">
+                  <div class="our-project-list__wrap">
+                     <svg class="our-project-list__icon" width="40" height="40">
+                        <use href="./img/icons.svg#icon-web-programming"></use>
+                     </svg>
+                     <p class="our-project-list__number">125</p>
+                  </div>
+               
+                  <p class="our-project-list__text">Our projects</p>
+               </li>
+               <li class="our-project-list__item">
+                  <div class="our-project-list__wrap">
+                     <svg class="our-project-list__icon" width="40" height="40">
+                        <use href="./img/icons.svg#icon-web-programming"></use>
+                     </svg>
+                     <p class="our-project-list__number">125</p>
+                  </div>
+               
+                  <p class="our-project-list__text">Our projects</p>
+               </li>
+            </ul>
+         </div>
+         
+      </section>
+      <section class="our-work">
+         <div class="conteiner">
+            <div class="our-work_wrap">
+               <h2 class="our-work__title section-title">Наши работы, на которых <br> 
+                  мы специализируемся
+               </h2>
+               <button class="btn our-work__btn">Все услуги</button>
+            </div>
+            <ul class="card-set our-work__list">         
+               <li class="our-work__item">
+                  <img src="./img/our-work.png" alt="" width="350" height="300" class="our-work_img">
+                  <div class="our-work__number-wrap">
+                     <h3 class="our-work__number"><span class="our-work__span">01.</span>  Исследование и упаковка</h3>
+                     <p class="our-work__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+                     <a href="" class="our-work__link">Подробнее</a>
+                  </div>
+               </li>
+               <li class="our-work__item">
+                  <img src="./img/our-work.png" alt="" width="350" height="300" class="our-work_img">
+                  <div class="our-work__number-wrap">
+                     <h3 class="our-work__number"><span class="our-work__span">01.</span>  Исследование и упаковка</h3>
+                     <p class="our-work__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+                     <a href="" class="our-work__link">Подробнее</a>
+                  </div>
+               </li>
+               <li class="our-work__item">
+                  <img src="./img/our-work.png" alt="" width="350" height="300" class="our-work_img">
+                  <div class="our-work__number-wrap">
+                     <h3 class="our-work__number"><span class="our-work__span">01.</span>  Исследование и упаковка</h3>
+                     <p class="our-work__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+                     <a href="" class="our-work__link">Подробнее</a>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </section>
+      <section class="our-project">
+         <div class="conteiner">
+            <div class="our-project__title-wrap">
+               <h2 class="our-project__title section-title">Наши проекты</h2>
+               <p class="our-project__text section-text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. </p>
+            </div>
+            <ul class="our-project__list card-set">
+               <li class="our-project__item">
+                  <img src="./img/our-project.png" alt="" class="our-project__img" width="255" height="255">
+               </li>
+               <li class="our-project__item">
+                  <img src="./img/our-project.png" alt="" class="our-project__img" width="255" height="255">
+               </li>
+               <li class="our-project__item">
+                  <img src="./img/our-project.png" alt="" class="our-project__img" width="255" height="255">
+               </li>
+               <li class="our-project__item">
+                  <img src="./img/our-project.png" alt="" class="our-project__img" width="255" height="255">
+               </li>
+            </ul>
+            <div class="our-project__button">
+               <button class="btn">Все проекты</button>
+            </div>
+         </div>
+      </section>
+      <section class="about-work ">
+         <div class="conteiner ">
+            <div class="about-work__text">
+               <h2 class="about-work__title section-title ">Видео о нашей работе</h2>
+               <p class="about-work__after-title section-text">Просто посмотрите, как мы работаем</p>
+               <div class="about-work__video-wrap">
+                  <iframe width="970" height="430" src="https://www.youtube.com/embed/h3fUgOKFMNU" title="YouTube video player" class="about-work__video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+               </div>
+               
+            </div>
+            <ul class="about-work__list">
+               <li class="about-work__item">
+                  <h3 class="about-work__form-title">Подпишитесь на нашу рассылку</h3>
+                  <p class="about-work__form-after-title">Полезные статьи, акции, новости - получите все это сейчас!</p>
+                  <form action="about-work-form" class="about-work-form">
+            
+                     <label class="about-work-form__email">
+                        <input type="email" name="mail" placeholder="E-mail" class="about-work-form__input"> 
+                        <button type="submit" class="about-work-form__btn btn" >
+                           Подписаться
+                       
+                        </button>
+                     </label>  
+                     
+                  </form> 
+                  <p class="about-work__text-spam">Мы не шлем спам, и передаем никому ваши данные.</p>
+               </li>
+            </ul>
+         </div>
+      </section>
+   </main>
+   <footer class="footer">
+      <div class="conteiner">
+         <div class="footer__list">
+            <ul class="footer__list-wrap">
+               <address>       
+                  <li class="footer__item">
+                     <h3 class="footer__title">Контактная информация</h3>
+                     <a href="mailto:test@test.ru" class="footer__link link">
+                        <svg class="footer__icon icon-envelope" width="15" height="15">
+                           <use href="./img/icons.svg#icon-envelope"></use>
+                        </svg>
+                        test@test.ru
+                     </a>
+                     <a href="tel:+87775556699" class="footer__link link">
+                        <svg class="footer__icon icon-call" width="15" height="15">
+                           <use href="./img/icons.svg#icon-call"></use>
+                        </svg>
+                        +8 777 555 66 99
+                     </a>
+                     <a class="footer__link link" 
+                        href="https://goo.gl/maps/YhduKLCjMnCNMGiL9"
+                        target="blank"
+                        rel="noreferrer noopener">
+                        <svg class="footer__icon icon-placeholder" width="15" height="15">
+                           <use href="./img/icons.svg#icon-placeholder"></use>
+                        </svg>
+                        Москва, Бульвар Ленина 33
+                     </a>
+                  </li>
+               </address>
+               <li class="footer__item">
+                  <h3 class="footer__title">Основные ссылки</h3>
+                  <a href="" class="footer__link link">
+                     <svg class="footer__icon icon-right-arrow" width="10" height="10">
+                        <use href="./img/icons.svg#icon-right-arrow"></use>
+                     </svg>
+                     Главная
+                  </a>
+                  <a href="" class="footer__link link">
+                     <svg class="footer__icon icon-right-arrow" width="10" height="10">
+                        <use href="./img/icons.svg#icon-right-arrow"></use>
+                     </svg>
+                     Наши проекты
+                  </a>
+                  <a href="" class="footer__link link">
+                     
+                     <svg class="footer__icon icon-right-arrow" width="10" height="10">
+                        <use href="./img/icons.svg#icon-right-arrow"></use>
+                     </svg>
+                     Наши услуги
+                  </a>
+                  <a href="" class="footer__link link">
+                     
+                     <svg class="footer__icon icon-right-arrow" width="10" height="10">
+                        <use href="./img/icons.svg#icon-right-arrow"></use>
+                     </svg>
+                     Контакты
+                  </a>
+               </li>
+            </ul>
+
+
+            <ul class="footer__list-wrap">
+                     
+               <li class="footer__item">
+                  <h3 class="footer__title">Наши проекты</h3>
+                  <a href="" class="footer__link link">
+                     <svg class="footer__icon icon-right-arrow" width="10" height="10">
+                        <use href="./img/icons.svg#icon-right-arrow"></use>
+                     </svg>
+                     РосНано
+                  </a>
+                  <a href="" class="footer__link link">
+                     <svg class="footer__icon icon-right-arrow" width="10" height="10">
+                        <use href="./img/icons.svg#icon-right-arrow"></use>
+                     </svg>
+                     Сколково
+                  </a>
+                  <a href="" class="footer__link link">
+                     
+                     <svg class="footer__icon icon-right-arrow" width="10" height="10">
+                        <use href="./img/icons.svg#icon-right-arrow"></use>
+                     </svg>
+                     Проект “Восток”
+                  </a>
+                  <a href="" class="footer__link link">
+                     
+                     <svg class="footer__icon icon-right-arrow" width="10" height="10">
+                        <use href="./img/icons.svg#icon-right-arrow"></use>
+                     </svg>
+                     ТЭЦ Калининграда
+                  </a>
+               </li>
+               
+               <li class="footer__item">
+                  <h3 class="footer__title">Социальные сети</h3>
+                  <a href="" class="footer__link link">
+                     <svg class="footer__icon icon-right-arrow" width="10" height="10">
+                        <use href="./img/icons.svg#icon-right-arrow"></use>
+                     </svg>
+                     VK.com
+                  </a>
+                  <a href="" class="footer__link link">
+                     <svg class="footer__icon icon-right-arrow" width="10" height="10">
+                        <use href="./img/icons.svg#icon-right-arrow"></use>
+                     </svg>
+                     Instagram
+                  </a>
+                  <a href="" class="footer__link link">
+                     
+                     <svg class="footer__icon icon-right-arrow" width="10" height="10">
+                        <use href="./img/icons.svg#icon-right-arrow"></use>
+                     </svg>
+                     Facebook
+                  </a>
+                  <a href="" class="footer__link link">
+                     
+                     <svg class="footer__icon icon-right-arrow" width="10" height="10">
+                        <use href="./img/icons.svg#icon-right-arrow"></use>
+                     </svg>
+                     Twitter
+                  </a>
+               </li>
+            </ul>
+         </div>
+         <div class="page-footer__developer-wrap">
+            <p class="developer">
+               (с) 2019. Все права защищены.
+            </p>
+         </div>
+      </div>
+      
+   </footer>
+   <script src="./js/menu.js"></script>
+</body>
+</html>

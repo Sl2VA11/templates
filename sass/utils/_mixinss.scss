@@ -1,0 +1,37 @@
+@mixin mobile() {
+  @media screen and (min-width: 480px) {
+    @content;
+  }
+}
+
+@mixin tablet() {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop() {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin xpix($dpr) {
+  @media (min-device-pixel-ratio: $dpr),
+    (min-resolution: ($dpr * 96dpi)),
+    (min-resolution: ($dpr + 0dppx)) {
+    @content;
+  }
+}
+
+@mixin flex($dflex: flex, $aligni: null, $justc: null) {
+  display: $dflex;
+  justify-content: $justc;
+  align-items: $aligni;
+}
+@mixin font($fs, $fw, $lh, $ls) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
