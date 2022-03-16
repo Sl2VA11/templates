@@ -49,6 +49,10 @@ body {
   color: inherit;
 }
 
+.lock {
+  overflow: hidden;
+}
+
 .section-title {
   font-weight: 700;
   font-size: 25px;
@@ -1212,5 +1216,116 @@ button {
 
 .about-work__text-spam {
   text-align: center;
+}
+
+.btn-gotop-wrap {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .btn-gotop-wrap {
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+    z-index: 100;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .btn-gotop {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #2a2a22;
+    background-color: #2a2a22;
+    background-image: url("../img/our-project.png");
+    background-repeat: no-repeat;
+    background-position: 50% 40%;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: opacity 0.3s linear, visibility 0.3s linear, transform 0.3s linear;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .btn-gotop {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.btn-gotop.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(110px);
+  pointer-events: none;
+}
+
+.btn-gotop:before,
+.btn-gotop:after {
+  content: '';
+  border: 1px solid #2a2a22;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: auto;
+  width: auto;
+  border-radius: 50%;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  z-index: -1;
+}
+
+.btn-gotop:before {
+  animation-name: pulse_1;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #4985FF;
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  font-size: 18px;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: opacity 0.3s linear, visibility 0.3s linear, transform 0.3s linear;
+}
+
+@media screen and (max-width: 768px) {
+  #myBtn {
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+#myBtn:hover {
+  background-color: #315aaa;
+}
+
+.gotop__icon {
+  transform: rotate(270deg);
+  fill: white;
+}
+
+@media screen and (max-width: 768px) {
+  .gotop__icon {
+    width: 20px;
+    height: 20px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

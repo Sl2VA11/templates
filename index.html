@@ -11,15 +11,15 @@
    <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 <body>
-   <header class="header">
+   <header class="header lock-padding">
       <div class="conteiner">
          <nav>
             <ul class="header__list">
                <li class="header__item"><a href="" class="header__link link">Главная</a></li>
-               <li class="header__item"><a href="" class="header__link link">Наши проекты</a></li>
-               <li class="header__item"><a href="" class="header__link link">Услуги</a></li>
-               <li class="header__item"><a href="" class="header__link link">Новости</a></li>
-               <li class="header__item"><a href="" class="header__link link">Контакты</a></li>
+               <li class="header__item"><a href="#project" class="header__link link">Наши проекты</a></li>
+               <li class="header__item"><a href="#work" class="header__link link">Услуги</a></li>
+               <li class="header__item"><a href="#news" class="header__link link">Новости</a></li>
+               <li class="header__item"><a href="#footer" class="header__link link">Контакты</a></li>
             </ul>
          </nav>
          <button type="button" class="menu-open-btn" data-menu-open>
@@ -157,7 +157,7 @@
             </div> 
          </div>
       </section>
-      <section class="project">
+      <section class="project" id="news">
          <div class="conteiner">
             <ul class="project__list">
                <li class="project__item">
@@ -226,7 +226,7 @@
          </div>
          
       </section>
-      <section class="our-work">
+      <section class="our-work" id="work">
          <div class="conteiner">
             <div class="our-work_wrap">
                <h2 class="our-work__title section-title">Наши работы, на которых <br> 
@@ -262,7 +262,7 @@
             </ul>
          </div>
       </section>
-      <section class="our-project">
+      <section class="our-project" id="project">
          <div class="conteiner">
             <div class="our-project__title-wrap">
                <h2 class="our-project__title section-title">Наши проекты</h2>
@@ -318,7 +318,7 @@
          </div>
       </section>
    </main>
-   <footer class="footer">
+   <footer class="footer" id="footer">
       <div class="conteiner">
          <div class="footer__list">
             <ul class="footer__list-wrap">
@@ -356,20 +356,20 @@
                      </svg>
                      Главная
                   </a>
-                  <a href="" class="footer__link link">
+                  <a href="#project" class="footer__link link">
                      <svg class="footer__icon icon-right-arrow" width="10" height="10">
                         <use href="./img/icons.svg#icon-right-arrow"></use>
                      </svg>
                      Наши проекты
                   </a>
-                  <a href="" class="footer__link link">
+                  <a href="#work" class="footer__link link">
                      
                      <svg class="footer__icon icon-right-arrow" width="10" height="10">
                         <use href="./img/icons.svg#icon-right-arrow"></use>
                      </svg>
                      Наши услуги
                   </a>
-                  <a href="" class="footer__link link">
+                  <a href="#footer" class="footer__link link">
                      
                      <svg class="footer__icon icon-right-arrow" width="10" height="10">
                         <use href="./img/icons.svg#icon-right-arrow"></use>
@@ -451,6 +451,15 @@
       </div>
       
    </footer>
-   <script src="./js/menu.js"></script>
+   <div class="btn-gotop-wraw">
+      <button onclick="topFunction()" id="myBtn" title="Go to top">
+         <svg class="gotop__icon icon-right-arrow hidden" width="50" height="50">
+            <use href="./img/icons.svg#icon-right-arrow"></use>
+         </svg>
+      </button>
+   </div>
+   
+    <script src="./js/gotop.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
